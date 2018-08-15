@@ -29,7 +29,7 @@ post '/visit' do
 	@message = "Dear #{@username}, we'll be waiting for you #{@datetime}"
 
 	f  = File.open './public/users.txt' , 'a'
-	f.write "User: #{@username}, Phone: #{@phone} , Date and time: #{@datetime}, Barber: #{@barber} ;"
+	f.write "User: #{@username}, Phone: #{@phone} , Date and time: #{@datetime}, Barber: #{@barber} ;     "
 	f.close
 
 	erb :message
